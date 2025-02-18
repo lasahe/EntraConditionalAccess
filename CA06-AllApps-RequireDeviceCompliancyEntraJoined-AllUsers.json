@@ -1,0 +1,60 @@
+{
+    "displayName": "CA06-AllApps-RequireDeviceCompliancyEntraJoined-AllUsers",
+    "state": "enabledForReportingButNotEnforced",
+    "sessionControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "all"
+        ],
+        "servicePrincipalRiskLevels": [],
+        "insiderRiskLevels": null,
+        "locations": null,
+        "devices": null,
+        "clientApplications": null,
+        "authenticationFlows": null,
+        "applications": {
+            "includeApplications": [
+                "All"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": [],
+            "applicationFilter": null
+        },
+        "users": {
+            "includeUsers": [
+                "All"
+            ],
+            "excludeUsers": [
+                "197b6aa6-8d55-4893-993a-f06040b6626e"
+            ],
+            "includeGroups": [],
+            "excludeGroups": [],
+            "includeRoles": [],
+            "excludeRoles": [],
+            "includeGuestsOrExternalUsers": null,
+            "excludeGuestsOrExternalUsers": {
+                "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+                "externalTenants": {
+                    "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+                    "membershipKind": "all"
+                }
+            }
+        },
+        "platforms": {
+            "includePlatforms": [
+                "all"
+            ],
+            "excludePlatforms": []
+        }
+    },
+    "grantControls": {
+        "operator": "AND",
+        "builtInControls": [
+            "compliantDevice",
+            "domainJoinedDevice"
+        ]
+    }
+}
