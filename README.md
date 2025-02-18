@@ -1,4 +1,4 @@
-# EntraConditionalAccess
+# Entra ID Conditional Access Policies
 
 Recommended Entra Conditional Access policies for [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer). Policies will be created in _report-only_ mode.
 
