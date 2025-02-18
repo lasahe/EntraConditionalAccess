@@ -1,7 +1,15 @@
 # Entra ID Conditional Access Policies
 
-Recommended Entra Conditional Access policies for [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer). Policies will be created in _report-only_ mode.
+Recommended Entra Conditional Access policies for [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer). 
+- Policies will be created in _report-only_ mode. 
+- Needed permissions: `Policy.ReadWrite.ConditionalAccess`
 
+### List policies
+- **All details:** Send a GET request to: `https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies`
+  - **Specific values:** `https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies?$select=displayName,createdDateTime,state`
+
+
+### Create policies
 1. Adjust the policies for your environment
   - Exclude users/roles/groups (e.g. Service accounts/principals, break-glass accounts) and allowed countries.
 2. Send a POST request to endpoint: `https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies`
@@ -27,3 +35,7 @@ Recommended Entra Conditional Access policies for [Microsoft Graph Explorer](htt
 ### Block Legacy Authentication
 - Policy: [CA05-AllApps-BlockLegacyAuthentication-AllUsers.json](https://github.com/lasahe/EntraConditionalAccess/blob/main/CA05-AllApps-BlockLegacyAuthentication-AllUsers.json)
 - Reference: [Microsoft Learn: Block legacy authentication with Conditional Access](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-block-legacy-authentication)
+
+### Block Legacy Authentication
+- Policy: [CA06-AllApps-RequireDeviceCompliancyEntraJoined-AllUsers.json](https://github.com/lasahe/EntraConditionalAccess/blob/main/CA06-AllApps-RequireDeviceCompliancyEntraJoined-AllUsers.json)
+- Reference: [Microsoft Learn: Require device compliance with Conditional Access](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-all-users-device-compliance)
