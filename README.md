@@ -36,6 +36,6 @@ Recommended Entra Conditional Access policies for [Microsoft Graph Explorer](htt
 - Policy: [CA05-AllApps-BlockLegacyAuthentication-AllUsers.json](https://github.com/lasahe/EntraConditionalAccess/blob/main/CA05-AllApps-BlockLegacyAuthentication-AllUsers.json)
 - Reference: [Microsoft Learn: Block legacy authentication with Conditional Access](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-block-legacy-authentication)
 
-### Block Legacy Authentication
+### Require device compliance & Entra (hybrid) join
 - Policy: [CA06-AllApps-RequireDeviceCompliancyEntraJoined-AllUsers.json](https://github.com/lasahe/EntraConditionalAccess/blob/main/CA06-AllApps-RequireDeviceCompliancyEntraJoined-AllUsers.json)
 - Reference: [Microsoft Learn: Require device compliance with Conditional Access](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-all-users-device-compliance)
